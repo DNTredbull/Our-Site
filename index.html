@@ -52,8 +52,11 @@
           <h3>TC Calculator</h3>
           <p>Here you can calculate points in TC Event</p>
         </li>
+       <!-- gun gala now have password -->
         <li class="card">
-          <a href=" https://gala-helper.vercel.app/"><img src="img/Gala.png" alt="img" /></a>
+          <a href="https://gala-helper.vercel.app/" id="gunGalaLink" onclick="return checkPassword()"> /
+            <img src="img/Gala.png" alt="img" />
+          </a>
           <h3>GunGala</h3>
           <p>Use this on Gun Gala Event every Monday</p>
         </li>
@@ -79,6 +82,25 @@
         </li>
       </ul>
     </section>
+
+
+    <script>
+      // password script
+      function checkPassword() {
+        // Prompt the user for a password
+        const password = prompt("Please enter the password to access Gun Gala:");
+        // the password
+        const correctPassword = "gala2048";
+
+        // Check if the entered password matches
+        if (password === correctPassword) {
+          return true;
+        } else {
+          alert("Incorrect password!");
+          return false;
+        }
+      }
+    </script>
 
     <section class="portfolio" id="portfolio">
       <h2>DNTn</h2>
@@ -112,10 +134,14 @@
         <p>President Region 246 Alliance DNTn<p>
       </div>
       <div class="row mission-vision">
-        <h3></h3>
-        <p></p>
-        <h3></h3>
-        <p></p>
+        <h3>Editor for this web site</h3>
+        <p>RedBull</p>
+        <h3>And a special thanks to those who have worked on Sheets-AI-Guides  </h3>
+        <p>Halt that is the creator of GunGale</p>
+        <p>Goku and Maddie for the kill list</p>
+        <p>Brie Cheese for the TC points calculator</p>
+        <p>La crema for the T5 and T& Calculator</p>
+        <p>And a final thanks to Crut for gather this info and for helping me</p>
       </div>
 
     </section>
