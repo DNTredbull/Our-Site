@@ -5,6 +5,8 @@
   padding: 0;
   box-sizing: content-box;
   font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: white;
 }
 
 html {
@@ -13,6 +15,7 @@ html {
 
 body {
   background: #d3d3d3;
+
 }
 
 header {
@@ -94,7 +97,7 @@ header a:hover, footer a:hover {
 
 .homepage .content {
   display: flex;
-  height: 85%;
+  height: 50%;
   z-index: 3;
   align-items: center;
   justify-content: center;
@@ -117,20 +120,7 @@ header a:hover, footer a:hover {
     text-shadow: 2px 2px 2px black, -2px -2px 2px black;
 }
 
-.content a {
-  color: #000;
-  display: block;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin: 0 10px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  background: grey;
-  border: 2px solid #fff;
-  transition: 0.4s ease;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-}
+
 
 .content a:hover {
   color: #fff;
@@ -145,12 +135,17 @@ section {
 }
 
 section h2 {
-  font-size: 2rem;
+  font-size: 4rem;
+  color: yellow;
+  text-shadow: 2px 2px 2px black, -2px -2px 2px black;
 
 }
 
 section > p {
   text-align: center;
+  font-size: 2rem;
+  color: yellow;
+  text-shadow: 2px 2px 2px black, -2px -2px 2px black;
 }
 
 section .cards {
@@ -160,6 +155,8 @@ section .cards {
   margin-top: 50px;
   padding: 0 10px;
   justify-content: space-between;
+  color: yellow;
+  text-shadow: 2px 2px 2px black, -2px -2px 2px black;
 }
 
 section.about {
@@ -167,15 +164,21 @@ section.about {
   margin-right: auto;
   max-width: 1200px;
   margin-bottom: 30em;
-  text-align: center;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px black, -2px -2px 2px black;
+  font-size: 20px;
 }
 
 .about .company-info {
-  margin-top: 30px;
+  margin-top: 450px;
+  color: yellow;
+  text-shadow: 2px 2px 2px black, -2px -2px 2px black;
+  font-size: 40px;
 }
 
 .about h3 {
-  margin: 30px 0 10px;
+  margin: 0px 0 10px;
 }
 
 .about .team {
@@ -184,7 +187,7 @@ section.about {
 }
 
 .about .team ul {
-  padding-left: 20px;
+  text-align: left;
 }
 
 section .cards .card {
@@ -194,19 +197,19 @@ section .cards .card {
   text-align: center;
 }
 
-.portfolio .cards .card {
+.Alliance .cards .card {
   padding: 0 0 20px;
 }
 
-.services .card img {
-  width: 120px;
-  height: 120px;
+.guides .card img {
+  width: 150px;
+  height: 150px;
   margin-bottom: 20px;
   border-radius: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
-.portfolio .card img {
+.Alliance .card img {
   width: 100%;
   padding-bottom: 10px;
   aspect-ratio: 16 / 9;
@@ -221,65 +224,6 @@ section .cards .card {
 
 .about .row {
   padding: 0 10px;
-}
-
-.contact .row {
-  margin: 60px 0 90px;
-  display: flex;
-  max-width: 1200px;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.contact .row .col {
-  padding: 0 10px;
-  width: calc(100% / 2 - 50px);
-}
-
-.contact .col p {
-  margin-bottom: 10px;
-}
-
-.contact .col p i {
-  color: #7a7a7a;
-  margin-right: 10px;
-}
-
-.contact form input {
-  height: 45px;
-  margin-bottom: 20px;
-  padding: 10px;
-  width: 100%;
-  font-size: 16px;
-  outline: none;
-  border: 1px solid #fffafa;
-}
-
-.contact form textarea {
-  padding: 10px;
-  width: 100%;
-  font-size: 16px;
-  height: 150px;
-  outline: none;
-  resize: vertical;
-  border: 1px solid #bfbfbf;
-}
-
-.contact form button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  font-size: 17px;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  background: #333;
-  transition: 0.2s ease;
-}
-
-.contact form button:hover {
-  background: #525252;
 }
 
 footer {
@@ -376,4 +320,218 @@ footer a {
     width: 100%;
     margin-bottom: 30px;
   }
+
+}
+
+
+.contact .row {
+  margin: 60px 0 90px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .row .col {
+  padding: 0 10px;
+  width: calc(100% / 2 - 50px);
+}
+
+.contact .col p {
+  margin-bottom: 10px;
+}
+
+.contact .col p i {
+  color: #7a7a7a;
+  margin-right: 10px;
+}
+
+.contact form input {
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #fffafa;
+}
+
+.contact form textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  height: 150px;
+  outline: none;
+  resize: vertical;
+  border: 1px solid #bfbfbf;
+
+}
+
+.contact form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #333;
+  transition: 0.2s ease;
+}
+
+.contact form button:hover {
+  background: #525252;
+}
+.arts {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  margin-bottom: 30em;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px black, -2px -2px 2px black;
+  font-size: 20px;
+}
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+  }
+}
+/* Bottom left text */
+.DOOMSDAY {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  margin-bottom: 30em;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px black, -2px -2px 2px white;
+  font-size: 100px;
+  letter-spacing: .1em;
+  text-shadow:
+    0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a,
+    0 4px 0 #282828,
+    0 5px 0 #262626,
+    0 6px 0 #242424,
+    0 7px 0 #222,
+    0 8px 0 #202020,
+    0 9px 0 #1e1e1e,
+    0 10px 0 #1c1c1c,
+    0 11px 0 #1a1a1a,
+    0 12px 0 #181818,
+    0 13px 0 #161616,
+    0 14px 0 #141414,
+    0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+/* Top left text */
+.LAST {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  margin-top: -30em;
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px white, -2px -2px 2px white;
+  font-size: 100px;
+  letter-spacing: .1em;
+  text-shadow:
+    0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a,
+    0 4px 0 #282828,
+    0 5px 0 #262626,
+    0 6px 0 #242424,
+    0 7px 0 #222,
+    0 8px 0 #202020,
+    0 9px 0 #1e1e1e,
+    0 10px 0 #1c1c1c,
+    0 11px 0 #1a1a1a,
+    0 12px 0 #181818,
+    0 13px 0 #161616,
+    0 14px 0 #141414,
+    0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+  }
+
+
+/* Bottom right text */
+.WeUnite {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: yellow;
+    letter-spacing: .1em;
+    text-shadow:
+      0 -1px 0 #fff,
+      0 1px 0 #2e2e2e,
+      0 2px 0 #2c2c2c,
+      0 3px 0 #2a2a2a,
+      0 4px 0 #282828,
+      0 5px 0 #262626,
+      0 6px 0 #242424,
+      0 7px 0 #222,
+      0 8px 0 #202020,
+      0 9px 0 #1e1e1e,
+      0 10px 0 #1c1c1c,
+      0 11px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 13px 0 #161616,
+      0 14px 0 #141414,
+      0 15px 0 #121212,
+      0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+/* Centered text */
+.DNTn {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  text-align: center;
+  font-size: 100px;
+  font-weight: bold;
+  color: yellow;
+    letter-spacing: .1em;
+    text-shadow:
+      0 -1px 0 #fff,
+      0 1px 0 #2e2e2e,
+      0 2px 0 #2c2c2c,
+      0 3px 0 #2a2a2a,
+      0 4px 0 #282828,
+      0 5px 0 #262626,
+      0 6px 0 #242424,
+      0 7px 0 #222,
+      0 8px 0 #202020,
+      0 9px 0 #1e1e1e,
+      0 10px 0 #1c1c1c,
+      0 11px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 13px 0 #161616,
+      0 14px 0 #141414,
+      0 15px 0 #121212,
+      0 22px 30px rgba(0, 0, 0, 0.9);
 }
