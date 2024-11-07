@@ -86,7 +86,7 @@ header a:hover, footer a:hover {
 }
 
 .homepage::before {
-  content: "";
+  content: "text";
   position: absolute;
   left: 0;
   top: 0;
